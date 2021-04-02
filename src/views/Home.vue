@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="home">
+    <header-cmp></header-cmp>
+    <body-cmp></body-cmp>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import headerCmp from './layout/headerCmp.vue';
+import bodyCmp from './layout/bodyCmp.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    headerCmp,
+    bodyCmp,
   },
 };
 </script>
